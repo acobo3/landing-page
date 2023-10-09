@@ -1,11 +1,54 @@
 body {
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
+    flex-direction: column;
 }
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+}
+
+header, .top, footer {
+    background: #1F2937;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.text,a, .i{
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    color:  #1F2937;
+    margin: 50px;
 }
 
 .links {
@@ -15,4 +58,48 @@ header {
 
 .top {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 50px;
+}
+
+.i-mid {
+    display: flex;
+    gap: 5px;
+}
+
+.i-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    border: 2px #3882F6 solid;
+    padding: 50px;
+    border-radius: 5%;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    margin: auto;
+    color: #E5E7EB;
 }
