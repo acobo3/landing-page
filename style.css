@@ -1,18 +1,35 @@
-body {
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-header {
+body {
+       font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-header, .top, footer {
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+header, footer {
     background: #1F2937;
+    padding: 0 40px 0 40px;
 }
 
 h1 {
@@ -25,6 +42,15 @@ h1 {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
+    width: 50%;
+}
+
+.i {
+    padding: 10px;
+    background-color: grey;
+    text-align: center;
+    text-justify: center;
+    height: 150px;
 }
 
 h3 {
@@ -48,7 +74,6 @@ h2 {
     font-size: 36px;
     font-style: italic;
     color:  #1F2937;
-    margin: 50px;
 }
 
 .links {
@@ -56,23 +81,18 @@ h2 {
     gap: 16px;
 }
 
-.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mid {
+.welcome {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    margin: 50px;
+    margin-bottom: 40px;
 }
 
 .i-mid {
     display: flex;
     gap: 5px;
+    margin: 10px;
 }
 
 .i-text {
@@ -95,11 +115,12 @@ img {
     background-color: #3882F6;
     color: #E5E7EB;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 footer {
     display: flex;
-    margin: auto;
+    padding: auto;
     color: #E5E7EB;
+    justify-content: center;
 }
